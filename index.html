@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Page Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><a href="#">Pro<span style="color: rgb(117, 49, 60);">Win</span></a></div>
+       <div class="menu">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+       </div>
+        <div class="burger"><span></span><span></span><span></span></div>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1>Welcome to my website</h1>
+      <p>
+        Offering customer app development, web development, and frontend design
+        services.
+      </p>
+      <a href="#services">Learn more</a>
+    </section>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Custom App Development</li>
+        <li>Web Development</li>
+        <li>Frontend Design</li>
+      </ul>
+      <a href="#contact">Get in touch</a>
+    </section>
+    <section id="portfolio">
+      <h2>Our Portfolio</h2>
+      <ul>
+        <li><img src="image1.jpg" alt="Project 1" /></li>
+        <li><img src="image2.jpg" alt="Project 2" /></li>
+        <li><img src="image3.jpg" alt="Project 3" /></li>
+      </ul>
+    </section>
+    <section id="contact" class="flex">
+      <h2>Contact Us</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; Your Company Name</p>
+    </footer>
+  </body>
+</html>
