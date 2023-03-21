@@ -1,0 +1,207 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lora&family=Public+Sans:wght@100;300;600&family=Righteous&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: 'Public Sans', sans-serif;
+  /* font-family: 'Righteous', cursive; */
+  /* font-family: 'Lora', sans-serif; */
+}
+
+header{
+  background-color: rgba(18, 109, 74, 0.615);
+}
+header nav{
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul li{
+  margin: 10px;
+}
+
+nav ul li a{
+  padding: 10px;
+  color: #fff;
+}
+.logo{
+  font-family: 'Righteous', cursive; 
+  font-size: 2rem;
+}
+.logo span{
+  color: white;
+}
+nav ul li a:hover{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.403);
+  cursor: pointer;
+}
+#services{
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#services ul li{
+  margin: 10px 0px;
+}
+
+#services h2{
+  color: rgba(128, 128, 128, 0.403);
+  font-size: 2rem;
+}
+#portfolio{
+  margin: 20px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+}
+.rows{
+  /* border: 2px solid rgba(128, 128, 128, 0.403); */
+  padding: 20px 0px;
+  border-radius: 10px;
+  display: flex;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 0;
+
+}
+.image-class{
+  width: 200px;
+  height: 200px;
+  border: 0.5px solid rgba(128, 128, 128, 0.403);
+  border-radius: 5px;
+  padding: 5px;
+  background-size: fill;
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.desc{
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.desc a{
+  color: blue;
+}
+.container h3{
+  font-size: 1rem;
+  padding:15px 0;
+  color: rgb(118, 30, 45);
+}
+.image-class img {
+  border-radius: 5px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#portfolio h2{
+  color: rgba(128, 128, 128, 0.403);
+  font-size: 2rem;
+}
+
+#contact{
+  margin: 20px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+#contact form{
+  display: flex;
+  flex-direction: column;
+}
+form input,button{
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid rgba(128, 128, 128, 0.403);
+  border-radius: 5px;
+}
+form textarea{
+  width: 300px;
+  overflow: hidden;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid rgba(128, 128, 128, 0.403);
+  border-radius: 5px;
+}
+
+.btn{
+  background-color: rgba(128, 128, 128, 0.403);
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: lightgreen;
+  cursor: pointer;
+}
+#contact h2{
+  color: rgba(128, 128, 128, 0.403);
+  font-size: 2rem;
+}
+footer{
+  height: 100px;
+  background-color: rgba(18, 109, 74, 0.615);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 550px) {
+  header{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100px;
+  }
+  header nav{
+    flex-direction: column;
+  }
+  nav ul{
+    display: none;
+  }
+  .rows{
+    flex-direction: column;
+  }
+  #contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo{
+    font-size: 3rem;
+  }
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://scontent.fktm6-1.fna.fbcdn.net/v/t39.30808-6/329256124_581977043814464_6266968958637793428_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=L9Bi_GTCTw0AX82AmKr&_nc_ht=scontent.fktm6-1.fna&oh=00_AfD6hQwEtXRpe2A0Af3XHqmNbROFebrDsZpuEvYBkxwceg&oe=641DBA7F"
+      type="image/x-icon"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Pro-Win</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Pro <span>Win</span></div>
+        <div class="head">
+          <ul id="menu">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>App Development</li>
+        <li>Frontend Design</li>
+        <li>Web Design</li>
+      </ul>
+    </section>
+    <section id="portfolio">
+      <h2>My Portfolio</h2>
+      <!-- Add portfolio items here -->
+      <div class="rows">
+        <div class="container">
+          <div class="image-class">
+            <img src="../static/images/imagelabai.png" alt="" />
+          </div>
+          <div class="desc">
+            <h3>ImageLab-AI</h3>
+            <a href="https://imagelabai.onrender.com">Visit</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image-class">
+            <img src="../static/images/kidzworld.png" alt="" />
+          </div>
+          <div class="desc">
+            <h3>KidzWorld: A Learning Platform for Kids</h3>
+            <a href="/https://drive.google.com/file/d/1wVQjTAk9PIgdoIwmMiz4V8_pyRXV12UG/view?usp=share_link">Download</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image-class">
+            <img src="../static/images/helix-infinite.jpg" alt="" />
+          </div>
+          <div class="desc">
+            <h3>Helix-Infinite</h3>
+            <a href="https://drive.google.com/file/d/1wRafvSkNovI-wM4LSh6jOgL6HeFJrwQe/view?usp=share_link">Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="/submit_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="10" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+      <p style="color: green;">{{msg}}</p>
+    </section>
+    <footer>
+      <p>2023, Pro-Win</p>
+    </footer>
+  </body>
+</html>
