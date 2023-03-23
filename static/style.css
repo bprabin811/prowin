@@ -162,6 +162,18 @@ form textarea{
   color: rgba(128, 128, 128, 0.403);
   font-size: 2rem;
 }
+#follow{
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+#follow i{
+  font-size: 30px;
+  margin: 0 20px;
+  color: rgba(66, 10, 10, 0.615);
+  cursor: pointer;
+}
 footer{
   height: 100px;
   background-color: rgba(18, 109, 74, 0.615);
@@ -202,6 +214,9 @@ footer{
   }
   .logo{
     font-size: 3rem;
+  }
+  #follow{
+    justify-content: center;
   }
 }
 
